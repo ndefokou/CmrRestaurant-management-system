@@ -30,17 +30,13 @@ const [open, setOpen] = React.useState(false);
 
 //form validation
 function FormValidate(e) {
-  if (e.Email === "user@gmail.com") {
-    if (e.Psw === "1234") {
-      //auth change value and page navigate to home screen
-      setAuth(true);
-      toast.success("Login Successfully!");
-      navigate("/");
-    } else {
-      toast.error("Invalid Password");
-    }
+  if (e.Email && e.Psw) { // Ensures both fields are filled
+    // Simulating authentication success
+    setAuth(true); 
+    toast.success("Login Successfully!");
+    navigate("/");
   } else {
-    toast.error("Invalid UserName");
+    toast.error("Please enter both email and password.");
   }
 }
 

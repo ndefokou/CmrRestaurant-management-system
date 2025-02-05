@@ -11,10 +11,10 @@ const Footer = () => {
           <Typography variant="h6" gutterBottom>
             Meet Our Staff
           </Typography>
-          <Typography component="p">Head Chef: John Doe</Typography>
-          <Typography component="p">Sous Chef: Jane Smith</Typography>
-          <Typography component="p">Restaurant Manager: Sarah Johnson</Typography>
-          <Typography component="p">Host: Michael Brown</Typography>
+          <Typography component="p">Head Chef: John </Typography>
+          <Typography component="p">Sous Chef: Jane andrea</Typography>
+          <Typography component="p">Restaurant Manager: HInada achim</Typography>
+          <Typography component="p">Host: Michael </Typography>
         </Grid>
 
         {/* About Section */}
@@ -42,7 +42,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <Box sx={{ textAlign: 'center', mt: 4 }}>
         <Typography component="p" variant="body2">
-          Copyright ©2024 All rights reserved | Resto Paradise
+          Donne for my ©2025 difend. All rights reserved | Resto Paradise
         </Typography>
       </Box>
     </Box>

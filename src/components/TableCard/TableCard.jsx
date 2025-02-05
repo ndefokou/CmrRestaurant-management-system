@@ -90,10 +90,20 @@ const TableCard = () => {
         type='email' label="Email" autoComplete='true' error={errors.email ? true :false} color="success" variant="outlined" />
         
         <TextField 
-        {...register('mobile',{required:"Mobile Field Required",
-        maxLength:{value:13,message:"Maximun 13 Characters"},
-        minLength:{value:10,message:"Minimun 10 Characters"}})} 
-        type='number' autoComplete='true' error={errors.mobile ? true :false} label="Mobile" color="success" variant="outlined" />
+        {...register('mobile', {
+          required: "Mobile Field Required",
+          pattern: {
+            value: /^6[0-9]{8}$/,
+            message: "Invalid Cameroonian phone number. Must start with 6 and have 9 digits.",
+          },
+        })}
+        type="number"
+        autoComplete="true"
+        error={errors.mobile ? true : false}
+        label="Mobile"
+        color="success"
+        variant="outlined"
+      />
 
         <TextField 
         {...register('checkin',{required:"Check-in Field Required"})} onFocus={(e)=>e.target.type='date'}
